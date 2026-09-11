@@ -1,0 +1,12 @@
+{
+  "total_rows": 5500,
+  "valid_location_pairs": 5500,
+  "invalid_locations_count": 0,
+  "columns_validated": 39,
+  "target_delayed_share": 0.633,
+  "avg_expected_delay_days": 102.4,
+  "raw_rows": 5515,
+  "duplicates_removed": 15,
+  "clean_rows": 5500,
+  "remaining_missing_cells": 0
+}

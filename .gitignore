@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment and secrets
+.env
+*.pem
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local databases and logs
+*.db
+*.sqlite3
+logs/
+*.log
+
+# Generated artifacts (keep models after training; ignore large dumps)
+data/raw/*.csv
+data/processed/*.csv
+data/processed/eda/
+reports/
+
+# Streamlit
+.streamlit/secrets.toml

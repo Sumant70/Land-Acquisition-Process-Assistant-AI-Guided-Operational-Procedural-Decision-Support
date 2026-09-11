@@ -1,0 +1,52 @@
+{
+  "dataset": "Synthetic Dataset for Prototype and Model Development",
+  "n_train": 4400,
+  "n_test": 1100,
+  "classification": {
+    "random_forest": {
+      "accuracy": 0.8382,
+      "precision": 0.906,
+      "recall": 0.8305,
+      "f1": 0.8666,
+      "roc_auc": 0.923
+    },
+    "gradient_boosting": {
+      "accuracy": 0.8955,
+      "precision": 0.9052,
+      "recall": 0.9325,
+      "f1": 0.9186,
+      "roc_auc": 0.9414
+    },
+    "xgboost": {
+      "accuracy": 0.9018,
+      "precision": 0.9401,
+      "recall": 0.9023,
+      "f1": 0.9208,
+      "roc_auc": 0.9477
+    }
+  },
+  "best_classifier": "xgboost",
+  "regression": {
+    "random_forest": {
+      "mae": 14.07,
+      "rmse": 17.94,
+      "r2": 0.9166
+    },
+    "gradient_boosting": {
+      "mae": 11.83,
+      "rmse": 14.75,
+      "r2": 0.9436
+    },
+    "xgboost": {
+      "mae": 9.63,
+      "rmse": 12.02,
+      "r2": 0.9625
+    }
+  },
+  "best_regressor": "xgboost",
+  "selection_rule": {
+    "classifier": "highest ROC-AUC on held-out test set",
+    "regressor": "lowest RMSE on held-out test set"
+  },
+  "note": "Metrics are computed on held-out test data. Do not treat them as production government-system accuracy."
+}
